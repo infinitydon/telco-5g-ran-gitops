@@ -2,7 +2,7 @@ apiVersion: ref.nephio.org/v1alpha1
 kind: Config
 metadata: # kpt-merge: oai-core/cucp-ran-amf-core
   name: cucp-ran-amf-core
-  namespace: oai-core
+  namespace: oai-ran
   annotations:
     specializer.nephio.org/owner: req.nephio.org/v1alpha1.Dependency.amf
     internal.kpt.dev/upstream-identifier: 'ref.nephio.org|Config|oai-core|cucp-ran-amf-core'
