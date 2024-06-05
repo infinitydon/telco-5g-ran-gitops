@@ -1,0 +1,22 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata: # kpt-merge: /oai-nr-ue
+  name: oai-nr-ue
+  annotations:
+    config.kubernetes.io/local-config: "true"
+    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|oai-nr-ue'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/infinitydon/nephio-proxmox-packages.git
+    directory: oai-nr-ue
+    ref: main
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/infinitydon/nephio-proxmox-packages.git
+    directory: oai-nr-ue
+    ref: main
+    commit: de559439a2ce3cee17a71a9897e64df8e8ca10cb
+info:
+  description: this package is used to deploy oai-nr-ue-1 with a dnn to attach with oai-upf-edge01
